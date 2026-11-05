@@ -1,0 +1,908 @@
+# THE AZUKI ROOM — PREMIUM RESTAURANT WEBSITE REDESIGN
+## Creative Direction, UI/UX, Frontend Engineering & Complete Website Implementation
+
+### 1. YOUR ROLE
+
+Act as a world-class, award-winning multidisciplinary digital design and development team consisting of:
+
+- Creative Director specialising in luxury hospitality brands
+- Awwwards-level Senior UI/UX Designer
+- Premium Restaurant Website Art Director
+- Expert Visual Storytelling Designer
+- Senior React, TypeScript and Frontend Developer
+- Motion Design and Micro-interaction Specialist
+- Responsive Design and Accessibility Expert
+- Technical SEO and Web Performance Specialist
+
+Your responsibility is to completely reimagine and rebuild The Azuki Room website with exceptional visual quality, polished functionality, original creative direction, and production-quality frontend code.
+
+**The final website should feel as though it was designed and developed by an internationally recognised luxury digital agency.**
+
+Target the craft, originality, refinement, usability and technical execution associated with leading Awwwards and CSS Design Awards websites.
+
+Do not create a basic restaurant template, generic landing page, or superficial visual reskin.
+
+Create an original, cohesive, immersive and unforgettable digital brand experience.
+
+---
+
+### 2. PROJECT OVERVIEW
+
+**Brand:** The Azuki Room
+
+**Existing website:** https://www.theazukiroom.com/
+
+**Business:** An intimate Japanese restaurant in Chancery Lane, London.
+
+**Project type:** Complete redesign of an existing restaurant website.
+
+**Primary business objective:** Inspire visitors to book a table.
+
+**Secondary objectives:**
+- Showcase the restaurant's unique atmosphere
+- Highlight Japanese cuisine and charcoal-grilling craftsmanship
+- Allow visitors to explore restaurant menus
+- Promote private dining and events
+- Introduce Saturday Sushi Club
+- Make location and contact information easy to find
+
+### THE MAIN PROBLEM
+
+I do not like my current website because it contains too much content, too many sections, and too much visible text.
+
+The overall experience feels busier and less refined than I want.
+
+I want something much more sophisticated, minimal, luxurious, visually striking, immersive, and professionally art-directed.
+
+However, do not remove important information simply to make the website shorter.
+
+Reduce unnecessary content and move detailed information to appropriate secondary pages.
+
+**Design principle: Less content. More emotion. More atmosphere. Better usability.**
+
+---
+
+### 3. INSPIRATION WEBSITES
+
+Study the following websites carefully before starting the redesign.
+
+#### PRIMARY INSPIRATION — GILGAMESH LONDON
+https://www.gilgameshlondon.co.uk/
+
+This is my favourite website and the strongest visual reference.
+
+Use it as the primary inspiration for:
+- Premium hospitality art direction
+- Cinematic visual presentation
+- Dramatic, immersive imagery
+- Elegant typography
+- Creative content composition
+- Sophisticated transitions
+- Refined luxury atmosphere
+- Editorial layouts
+- Full-width visual sections
+- Beautifully controlled spacing
+- High-end navigation and booking presentation
+
+The Azuki Room should achieve a similarly premium visual standard, but with its own distinctive identity.
+
+Do not copy Gilgamesh's Babylonian aesthetics, branding, text, exact layouts or proprietary visual assets.
+
+#### SECONDARY INSPIRATION — JUNSEI LONDON
+https://junsei.co.uk/ldn/
+
+Use Junsei as inspiration for:
+- Japanese cultural authenticity
+- Elegant minimalism
+- Yakitori and charcoal-cooking storytelling
+- Understated Japanese luxury
+- Refined restaurant presentation
+- Sophisticated food photography
+- Warm, intimate ambience
+
+Apply these principles to The Azuki Room's actual brand and offering.
+
+#### THIRD INSPIRATION — JOY KING LAU
+https://joykinglau.co.uk/
+
+Use this website as inspiration for:
+- Clear, straightforward content hierarchy
+- Direct restaurant messaging
+- Accessible navigation
+- Simplified information architecture
+- Practical restaurant information
+- Content restraint
+
+Do not adopt its Cantonese branding or cuisine identity.
+
+### INSPIRATION PRIORITY
+
+Use this as the creative weighting:
+
+- Gilgamesh London: 60% — luxury visual experience and presentation
+- Junsei London: 30% — Japanese refinement and atmosphere
+- Joy King Lau: 10% — clarity and simplicity
+
+These percentages describe creative priorities, not instructions to copy layouts.
+
+The finished website must still feel 100% original to The Azuki Room.
+
+---
+
+### 4. EXISTING SOURCE CODE AND ASSET INSTRUCTIONS
+
+I am providing a ZIP file containing the current website's source code and media assets.
+
+**This ZIP file must be treated as the primary technical and content source for the redesign.**
+
+Before writing new code:
+
+1. Inspect the entire supplied project.
+2. Understand the existing React component architecture.
+3. Identify available images, videos, menus, icons, fonts, and configuration files.
+4. Identify current pages, URLs, links, navigation behaviour, and booking integrations.
+5. Review the current website's useful content and sections.
+6. Identify sections that should be retained, redesigned, condensed, merged, or removed.
+7. Identify reusable code and components.
+8. Identify potential issues in the existing implementation.
+
+The source project includes React, TypeScript, Vite, Tailwind CSS and Motion.
+
+Preserve this technology stack where practical.
+
+### EXISTING MEDIA ASSETS
+
+The supplied project includes important assets such as:
+
+**Hero videos:**
+- public/videos/azuki-hero.mp4
+- public/videos/azuki-hero-mobile.mp4
+
+**Restaurant photography:**
+- public/images/interiors/
+
+**Food photography:**
+- public/images/food/
+
+**Kitchen and chef photography:**
+- public/images/kitchen/
+
+**Existing menus:**
+- public/menus/
+
+These assets are especially important.
+
+Reuse the real restaurant photography and videos intelligently.
+
+Choose images based on composition, visual quality, colour, subject matter and suitability for each section.
+
+Do not use random unrelated restaurant photography when suitable official imagery is already provided.
+
+Do not modify the restaurant's actual appearance or present fictional interiors as real.
+
+Do not change existing asset URLs unnecessarily.
+
+Do not delete, rename or break media files or menu documents.
+
+Where beneficial, crop, optimise, resize and art-direct their presentation through CSS.
+
+### IMPORTANT
+
+You may reuse selected sections, layouts, content or components from the existing website if they are genuinely strong.
+
+However, you must not blindly preserve the existing structure.
+
+You have full creative freedom to completely redesign weak sections, combine redundant sections, introduce stronger layouts, and remove unnecessary content.
+
+The result must feel like a new, professionally designed website rather than a lightly edited version of the existing one.
+
+---
+
+### 5. BRAND PERSONALITY
+
+The Azuki Room should communicate:
+
+**HIDDEN — INTIMATE — JAPANESE — CINEMATIC — REFINED — WARM — EXCLUSIVE**
+
+The restaurant should feel like a hidden destination in London, discovered rather than advertised.
+
+The website should evoke:
+
+- The glow of charcoal fire
+- The precision of Japanese craftsmanship
+- The warmth of intimate dining
+- The texture of natural materials
+- The anticipation of discovering a hidden restaurant
+- The beauty of food prepared with care
+
+Visitors should feel curious, impressed, welcomed and motivated to make a reservation.
+
+### VISUAL CONCEPT
+
+**THE HIDDEN WORLD OF AZUKI**
+
+Create a modern digital interpretation of a refined Japanese dining room.
+
+Think warm shadows, cinematic imagery, charcoal textures, subtle architectural lines, expressive typography and carefully controlled negative space.
+
+Luxury must come from confidence, restraint and visual craftsmanship — not excessive decoration.
+
+### AVOID
+
+- Generic restaurant templates
+- Repetitive three-column card grids
+- Overly rounded cards
+- Excessive gradients
+- Bright gold gradients or cheap luxury effects
+- Cartoon Japanese illustrations
+- Random cherry blossom patterns
+- Unnecessary animations
+- Excessively large paragraphs
+- Unstructured content blocks
+- Repeated calls to action in every small section
+- Heavy glassmorphism
+- Generic AI-generated restaurant imagery
+- Crowded headers
+- Template-like icon grids
+
+---
+
+### 6. DESIGN SYSTEM
+
+Create a complete, consistent visual design system.
+
+#### COLOUR PALETTE
+
+Start with this proposed palette:
+
+- Background: #11100E — deep warm charcoal
+- Secondary dark: #1C1A17 — charcoal brown
+- Light surface: #EAE5DA — warm ivory
+- Primary text on dark: #F3EFE6
+- Text on light: #191816
+- Muted accent: #9B352F — restrained Japanese red
+- Secondary accent: #B49A75 — muted warm bronze
+
+These are starting points, not absolute constraints.
+
+Refine the palette based on the actual existing logo, photography and brand.
+
+Use a maximum of three dominant colours in any given section.
+
+Contrast and readability are essential.
+
+#### TYPOGRAPHY
+
+Build a premium editorial typography system.
+
+Use:
+- One expressive editorial serif or similarly refined display typeface
+- One clean contemporary sans-serif
+- Optional Japanese character styling where appropriate
+
+Display headlines should feel distinctive and meticulously composed.
+
+Navigation should be restrained, elegant and legible.
+
+Avoid using excessive letter spacing on paragraphs or large bodies of text.
+
+Use dramatic headline scale only when it improves the composition.
+
+Create responsive typography using fluid CSS techniques such as clamp().
+
+#### SPACING
+
+Use a consistent responsive spacing system.
+
+Prioritise:
+- Generous negative space
+- Intentional section rhythm
+- Strong visual alignment
+- Balanced asymmetry
+- Consistent margins and gutters
+- Careful composition of imagery and text
+
+Do not make every section identical in height or layout.
+
+Create visual rhythm through alternating density, photography, scale and whitespace.
+
+---
+
+### 7. HOMEPAGE — CREATIVE STRUCTURE
+
+The homepage should feel like a visually curated cinematic journey.
+
+Do not create a long, generic marketing page.
+
+Aim for approximately 5–7 primary sections, with the footer handled separately.
+
+You may adjust their order and presentation if a stronger creative solution exists.
+
+#### SECTION 1 — CINEMATIC HERO
+
+The hero is the most important part of the entire design.
+
+Create a truly impressive, premium, full-viewport hero experience.
+
+Prioritise the existing desktop and mobile hero videos.
+
+The hero must include:
+- Cinematic restaurant or food imagery
+- Appropriate dark overlay for text legibility
+- Elegant existing Azuki Room branding
+- A short, powerful headline
+- Minimal supporting information
+- A prominent BOOK A TABLE action
+- A refined secondary menu link
+
+Suggested headline direction:
+
+**A Hidden World of Japanese Dining**
+
+Or develop a stronger original headline.
+
+Do not overcrowd the hero.
+
+Use a carefully composed layout and sophisticated visual balance.
+
+Include subtle motion only where beneficial.
+
+Ensure the hero works beautifully on desktop and mobile.
+
+#### SECTION 2 — THE AZUKI EXPERIENCE
+
+Introduce the restaurant using a visually compelling editorial layout.
+
+Possible headline:
+
+**An Intimate Escape from the Ordinary**
+
+Use the actual restaurant interior photography.
+
+Include no more than approximately 35–50 words of supporting copy.
+
+Describe the combination of Japanese dining, charcoal cooking, atmosphere and intimacy.
+
+Avoid repeating everything already communicated by the hero.
+
+Consider:
+- Large image paired with carefully positioned text
+- Split-screen editorial composition
+- Overlapping image composition, only if visually justified
+- Full-bleed imagery with restrained text placement
+
+This section should feel beautifully art-directed.
+
+#### SECTION 3 — THE ART OF JAPANESE DINING
+
+Create an immersive cuisine showcase.
+
+Highlight the actual restaurant's offerings, such as:
+- Yakitori
+- Robatayaki
+- Sushi and sashimi
+- Other signature dishes verified in the current source
+
+Use existing food and kitchen photographs.
+
+Instead of repetitive standard cards, consider:
+- An editorial image sequence
+- Oversized photographic panels
+- One hero photograph with supporting imagery
+- An elegant controlled gallery
+- An asymmetric photographic composition
+
+Use short headings and minimal explanatory text.
+
+Include a clear VIEW MENUS action.
+
+All existing menu PDFs or relevant menu links must remain accessible.
+
+#### SECTION 4 — SATURDAY SUSHI CLUB
+
+Keep this experience because it is a distinctive offering.
+
+However, redesign it dramatically.
+
+Use a beautiful food image and minimal editorial copy.
+
+The section should feel premium, not like a promotional banner.
+
+Include:
+- Event name
+- Relevant verified schedule
+- Essential verified offer details
+- Clear menu or booking CTA
+
+Only use pricing and conditions verified in the existing source, and flag any inconsistencies for review.
+
+#### SECTION 5 — PRIVATE DINING / THE AZUKI LOUNGE
+
+Showcase the private dining and event experience.
+
+Use real lounge or interior photography.
+
+Suggested headline:
+
+**Beyond the Dining Room**
+
+Create a luxurious, atmospheric section.
+
+Avoid a long description.
+
+Include a concise introduction and an action linking to the detailed private events page.
+
+Preserve genuine booking or enquiry functionality.
+
+#### SECTION 6 — VISIT & RESERVE
+
+Finish the visual journey with a refined reservation experience.
+
+Suggested headline:
+
+**Your Table Awaits**
+
+Include:
+- Prominent reservation action
+- Verified restaurant location
+- Opening hours or an accessible hours link
+- Contact information
+- Google Maps directions
+
+The booking CTA must be unmistakably clear.
+
+The section should be elegant, uncluttered and useful.
+
+#### FOOTER
+
+Create a sophisticated footer containing:
+- The Azuki Room logo
+- Restaurant address
+- Contact information
+- Essential navigation
+- Social links if available
+- Opening hours if useful
+- Copyright
+- Necessary policy links
+
+No unnecessary paragraphs.
+
+---
+
+### 8. SECONDARY PAGES
+
+Build or retain fully working secondary pages where appropriate.
+
+Suggested site architecture:
+
+1. Home
+2. Menus
+3. Our Story
+4. Private Dining & Events
+5. Contact / Visit
+
+Keep Saturday Sushi Club discoverable from the homepage and menus or as a dedicated page if justified by the existing content.
+
+### MENUS PAGE
+
+Create a visually refined, easy-to-use menu interface.
+
+Preserve the actual restaurant's available menus.
+
+Use tasteful categories, concise descriptions and clean links to existing documents.
+
+Do not invent menu items or prices.
+
+If menus are PDFs or images, preserve and display them accessibly.
+
+### OUR STORY PAGE
+
+Present a short, thoughtful narrative about the restaurant's identity, intimacy and Japanese cooking philosophy.
+
+Use editorial photography and strong typography.
+
+### PRIVATE EVENTS PAGE
+
+Create a dedicated experience for private dining and event enquiries.
+
+Use existing lounge photographs, verified venue information and a working enquiry action.
+
+### CONTACT PAGE
+
+Present essential restaurant information clearly, with working directions, phone, email and reservation links.
+
+Avoid unnecessary content.
+
+---
+
+### 9. NAVIGATION DESIGN
+
+Create a sophisticated, minimal navigation system inspired by premium hospitality websites.
+
+Desktop navigation should be clean and balanced.
+
+Include:
+- Brand logo
+- Essential page links
+- Prominent BOOK A TABLE action
+
+Use a transparent or visually integrated header over the hero.
+
+Introduce an elegant background treatment when scrolling, if needed for readability.
+
+### MOBILE NAVIGATION
+
+Build a completely considered mobile navigation experience.
+
+Use an elegant menu trigger and full-screen or well-designed overlay.
+
+Ensure:
+- Large touch targets
+- Clear hierarchy
+- Smooth open/close transitions
+- Keyboard accessibility
+- Proper focus handling
+- Clear reservation access
+
+The mobile website must feel purpose-built rather than compressed from desktop.
+
+---
+
+### 10. MOTION DESIGN
+
+Create premium motion design comparable in sophistication to leading creative agency work.
+
+Motion must support storytelling and usability.
+
+Potential interactions:
+- Refined text reveal animations
+- Subtle image reveals
+- Gentle scroll-linked transitions
+- Controlled image scale effects
+- Elegant hover effects
+- Smooth menu transitions
+- Subtle page transitions
+- Carefully restrained parallax
+- A sophisticated initial hero entrance
+
+Use Motion for React where appropriate.
+
+### STRICT ANIMATION RULES
+
+- Avoid excessive movement.
+- Do not delay access to important content.
+- Avoid scroll-jacking.
+- Avoid unnecessary animation libraries.
+- Maintain excellent performance.
+- Support prefers-reduced-motion.
+- Never create motion that interferes with readability or booking.
+
+The website should feel smooth, calm, controlled and expensive.
+
+Not flashy.
+
+---
+
+### 11. CONTENT AND COPYWRITING
+
+You are also acting as an expert luxury hospitality copywriter.
+
+Rewrite the website copy in refined, natural British English.
+
+The voice should be:
+- Confident
+- Sophisticated
+- Understated
+- Inviting
+- Sensory
+- Human
+- Concise
+
+Avoid generic phrases such as:
+- A culinary journey like no other
+- An unforgettable gastronomic adventure
+- Where tradition meets innovation
+- A symphony of flavours
+- Experience the extraordinary
+
+Instead, write specific, memorable copy that reflects the real restaurant.
+
+Keep most homepage descriptions under 40 words.
+
+Let photography, typography and space communicate the emotion.
+
+Preserve necessary factual details.
+
+### CONTENT ACCURACY
+
+The existing website, supplied source code and menu files are the factual source of truth.
+
+Do not invent:
+- Awards
+- Customer testimonials
+- Ratings
+- Menu items
+- Prices
+- Opening hours
+- Restaurant capacities
+- Booking conditions
+- Promotions
+- Dietary claims
+
+Preserve the restaurant's halal positioning accurately.
+
+If source content contains conflicting information, flag it rather than guessing.
+
+Keep all important legal, dietary and reservation information accessible.
+
+---
+
+### 12. RESPONSIVE DESIGN
+
+The entire website must be designed for:
+
+- Large desktop screens
+- Standard desktop screens
+- Tablets
+- Modern mobile devices
+- Small mobile screens
+
+Design mobile intentionally.
+
+Do not simply stack every desktop section vertically without reconsidering the composition.
+
+Optimise:
+- Hero video framing
+- Typography
+- Image cropping
+- Navigation
+- CTA placement
+- Section spacing
+- Content order
+- Touch interactions
+
+Use responsive images and appropriate mobile-specific media assets.
+
+Prevent horizontal overflow and awkward text wrapping.
+
+---
+
+### 13. TECHNICAL IMPLEMENTATION
+
+Use the provided project's existing stack where practical:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion for React
+
+Deliver clean, maintainable, modular code.
+
+### ENGINEERING REQUIREMENTS
+
+- Functional navigation
+- Correct routing and deep-link behaviour
+- Working menu links
+- Functional booking integration
+- Functional email and telephone links
+- Accessible mobile menu
+- Responsive images and videos
+- Lazy loading below-the-fold imagery
+- Proper media fallback handling
+- Optimised hero video loading
+- Semantic HTML
+- Proper heading hierarchy
+- Keyboard navigation
+- Accessible focus states
+- Appropriate ARIA usage
+- Accessible contrast
+- Reduced-motion support
+- SEO metadata
+- Open Graph metadata
+- Structured data appropriate for a restaurant
+- Correct canonical URLs where applicable
+- No broken asset paths
+- No console errors
+- No unnecessary dependencies
+
+### PERFORMANCE
+
+Aim for:
+- Lighthouse Performance: 90+
+- Lighthouse Accessibility: 95+
+- Lighthouse Best Practices: 95+
+- Lighthouse SEO: 95+
+
+These are targets to test, not scores to claim without running audits.
+
+Optimise Core Web Vitals, especially LCP, CLS and INP.
+
+Keep animations smooth and avoid layout shifts.
+
+Do not sacrifice performance for visual effects.
+
+---
+
+### 14. BOOKING AND BUSINESS FUNCTIONALITY
+
+Preserve the real restaurant booking experience.
+
+Inspect the existing source code for:
+- Reservation URLs
+- Third-party booking providers
+- Event booking links
+- Email destinations
+- Telephone links
+- Menu links
+- Google Maps destinations
+- Social media links
+
+Retain or correctly reconnect these.
+
+Do not replace functioning reservation links with fake forms or placeholder buttons.
+
+If a live integration cannot be tested, clearly identify the limitation.
+
+Every CTA must lead to a meaningful destination.
+
+---
+
+### 15. CREATIVE FREEDOM
+
+You have significant creative freedom.
+
+You may:
+- Completely change the homepage layout
+- Redesign the navigation
+- Rework typography
+- Change section ordering
+- Simplify content
+- Combine redundant sections
+- Introduce new editorial compositions
+- Reuse strong existing sections
+- Add subtle motion design
+- Improve the menu experience
+- Improve mobile navigation
+- Refine the existing brand presentation
+
+However:
+
+Do not remove the restaurant's core identity, essential business details, important menus or functioning booking paths.
+
+Do not copy the inspiration websites exactly.
+
+Prioritise originality and strong art direction.
+
+---
+
+### 16. REQUIRED WORKFLOW
+
+Follow this process internally before producing the final implementation.
+
+**PHASE 1 — DISCOVERY**
+
+Inspect:
+- All three inspiration websites
+- The current Azuki Room website
+- The supplied source ZIP
+- Available media assets
+- Existing pages and routes
+- Current functional links
+
+If a reference website cannot be accessed, proceed with the available information and clearly state what could not be inspected.
+
+**PHASE 2 — DESIGN AUDIT**
+
+Identify:
+- What makes the current website feel crowded
+- Which sections deserve to remain
+- Which sections should be removed or combined
+- Which images are strongest
+- Which interactions need improvement
+- Which information is essential to restaurant visitors
+
+**PHASE 3 — CREATIVE DIRECTION**
+
+Establish:
+- Clear visual concept
+- Refined colour palette
+- Typography system
+- Photography direction
+- Layout principles
+- Animation principles
+- Homepage section hierarchy
+
+**PHASE 4 — IMPLEMENTATION**
+
+Create the actual redesigned website.
+
+Update the existing codebase and use its supplied assets.
+
+Do not stop after presenting a design concept.
+
+**PHASE 5 — QUALITY ASSURANCE**
+
+Check:
+- Desktop appearance
+- Mobile appearance
+- Navigation
+- Buttons
+- Routes
+- Reservation links
+- Menu links
+- Media loading
+- Responsive layouts
+- Accessibility
+- Performance
+- TypeScript build
+- Visual consistency
+
+Fix any issues that can be identified.
+
+---
+
+### 17. FINAL OUTPUT EXPECTATIONS
+
+I want a complete, visually outstanding, functional restaurant website.
+
+Not a wireframe.
+
+Not a generic restaurant template.
+
+Not a collection of disconnected components.
+
+Not just a design description.
+
+Deliver the actual working implementation.
+
+The result should have:
+
+1. A genuinely impressive cinematic homepage.
+2. Strong visual storytelling using real Azuki Room assets.
+3. A clear, consistent luxury Japanese visual identity.
+4. Beautifully designed secondary pages.
+5. Highly polished typography and spacing.
+6. Elegant motion and interactions.
+7. Excellent mobile experience.
+8. Minimal, high-quality copy.
+9. Easy access to menus, reservations and location.
+10. Clean, reliable, production-quality code.
+
+Include a concise summary of:
+- What was redesigned
+- Which existing assets were reused
+- Which existing sections were retained or removed
+- Any missing assets or unverified information
+- Any integration or testing limitations
+
+### 18. FINAL CREATIVE STANDARD
+
+Before finalising, critically evaluate the website as if you were an art director reviewing work submitted to a leading international digital design award.
+
+Ask:
+
+- Does this look distinctly premium?
+- Is the composition original and well considered?
+- Does the photography feel intentionally art-directed?
+- Is the typography exceptional?
+- Is there unnecessary content?
+- Is every section visually justified?
+- Does the website feel like one cohesive experience?
+- Is mobile as polished as desktop?
+- Can a guest easily book a table?
+- Does the website genuinely represent The Azuki Room?
+
+If the design looks ordinary, generic or template-based, improve it before treating the task as complete.
+
+## THE ULTIMATE GOAL
+
+Create a website that makes visitors think:
+
+"This restaurant looks special. I want to experience it."
+
+The website should feel like entering The Azuki Room itself — a hidden, intimate and beautiful Japanese dining experience in the heart of London.
+
+**Make it cinematic, sophisticated, minimal, emotionally compelling, technically excellent and unmistakably The Azuki Room.**
+
+**Now inspect my supplied source files, establish the creative direction, and implement the complete redesign.**

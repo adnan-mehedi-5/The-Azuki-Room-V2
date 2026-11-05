@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-jp: "Noto Serif JP", serif;
+
+  --color-obsidian: #0E0D0C;
+  --color-obsidian-surface: #161513;
+  --color-obsidian-card: #1F1D1A;
+  --color-obsidian-border: rgba(243, 239, 230, 0.08);
+
+  --color-gold: #C5A880;
+  --color-gold-hover: #D8BF9B;
+  --color-gold-muted: #A88D68;
+  --color-gold-subtle: rgba(197, 168, 128, 0.25);
+  --color-gold-glow: rgba(197, 168, 128, 0.15);
+
+  --color-ivory: #F3EFE6;
+  --color-ivory-muted: #A8A196;
+  --color-ivory-dark: #EAE5DA;
+}
+
+@layer base {
+  body {
+    background-color: #0E0D0C;
+    color: #F3EFE6;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-jp {
+    font-family: var(--font-jp);
+  }
+}
+
+/* Custom subtle luxury grain texture */
+.bg-grain {
+  background-image: radial-gradient(rgba(197, 168, 128, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Subtle gold line accents */
+.border-gold-subtle {
+  border-color: rgba(197, 168, 128, 0.25);
+}
+
+/* Smooth champagne scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0E0D0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #25221E;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A880;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "The Azuki Room — Halal Japanese Izakaya, Chancery Lane London",
+  "description": "An intimate, luxury Japanese dining room in Chancery Lane, London. Charcoal yakitori and robatayaki over binchotan fire, handcrafted sushi, and the Saturday Sushi Club.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
