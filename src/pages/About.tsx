@@ -33,7 +33,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate, onOpenBookingModal }) 
           <div className="lg:col-span-7 relative group overflow-hidden border border-[#C5A880]/25 shadow-2xl">
             <div className="aspect-[16/10] w-full overflow-hidden bg-[#161513]">
               <img
-                src="/images/interiors/dining-room-shoji-lights.webp"
+                src={`${import.meta.env.BASE_URL}images/interiors/dining-room-shoji-lights.webp`}
                 alt="Shoji lantern lighting in The Azuki Room dining room"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
@@ -115,7 +115,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate, onOpenBookingModal }) 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-20">
           <div className="relative group overflow-hidden border border-[#C5A880]/20">
             <img
-              src="/images/kitchen/chef-grilling-fish-smoke.webp"
+              src={`${import.meta.env.BASE_URL}images/kitchen/chef-grilling-fish-smoke.webp`}
               alt="Live charcoal grilling at The Azuki Room"
               className="w-full h-full object-cover aspect-[16/10] transition-transform duration-700 group-hover:scale-105"
             />
@@ -130,7 +130,7 @@ export const About: React.FC<AboutProps> = ({ onNavigate, onOpenBookingModal }) 
 
           <div className="relative group overflow-hidden border border-[#C5A880]/20">
             <img
-              src="/images/kitchen/blowtorch-sushi.webp"
+              src={`${import.meta.env.BASE_URL}images/kitchen/blowtorch-sushi.webp`}
               alt="Aburi torch technique on nigiri"
               className="w-full h-full object-cover aspect-[16/10] transition-transform duration-700 group-hover:scale-105"
             />

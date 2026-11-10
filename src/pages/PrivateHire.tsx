@@ -45,7 +45,7 @@ export const PrivateHire: React.FC = () => {
             <div className="space-y-4">
               <div className="aspect-[16/10] overflow-hidden border border-[#C5A880]/15 mb-4">
                 <img
-                  src="/images/interiors/dining-room-shoji-lights.webp"
+                  src={`${import.meta.env.BASE_URL}images/interiors/dining-room-shoji-lights.webp`}
                   alt="Main dining room for private dining hire"
                   className="w-full h-full object-cover"
                 />
@@ -83,7 +83,7 @@ export const PrivateHire: React.FC = () => {
             <div className="pt-6 mt-6 border-t border-[#C5A880]/15 flex items-center justify-between">
               <span className="text-xs text-[#F3EFE6]/60">Minimum spends on enquiry</span>
               <a
-                href="/menus/event-set-menus.pdf"
+                href={`${import.meta.env.BASE_URL}menus/event-set-menus.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs text-[#C5A880] hover:underline"
@@ -99,7 +99,7 @@ export const PrivateHire: React.FC = () => {
             <div className="space-y-4">
               <div className="aspect-[16/10] overflow-hidden border border-[#C5A880]/15 mb-4">
                 <img
-                  src="/images/interiors/terrace.webp"
+                  src={`${import.meta.env.BASE_URL}images/interiors/terrace.webp`}
                   alt="The Azuki Lounge private hire"
                   className="w-full h-full object-cover"
                 />

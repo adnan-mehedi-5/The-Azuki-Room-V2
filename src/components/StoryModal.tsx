@@ -48,7 +48,7 @@ export const StoryModal: React.FC<StoryModalProps> = ({
 
           <div className="relative aspect-[16/9] w-full overflow-hidden border border-[#F3EFE6]/10">
             <img
-              src="/images/kitchen/chef-grilling-fish-smoke.webp"
+              src={`${import.meta.env.BASE_URL}images/kitchen/chef-grilling-fish-smoke.webp`}
               alt="Binchotan charcoal grilling craftsmanship"
               className="w-full h-full object-cover"
             />

@@ -25,7 +25,7 @@ export const Menus: React.FC<MenusProps> = ({ onOpenBookingModal }) => {
 
   return (
     <div className="bg-[#0E0D0C] text-[#F3EFE6] pt-28 md:pt-36 pb-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
@@ -53,7 +53,7 @@ export const Menus: React.FC<MenusProps> = ({ onOpenBookingModal }) => {
         </div>
 
         {/* Category Switcher Tabs */}
-        <div className="flex items-center gap-2 border-b border-[#C5A880]/20 mb-12 overflow-x-auto pb-px">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-nowrap items-center gap-2 border-b border-[#C5A880]/20 mb-8 sm:mb-12 pb-4 md:pb-px md:overflow-x-auto">
           {categories.map((cat) => {
             const Icon = cat.icon;
             const isActive = activeCategory === cat.id;
@@ -61,14 +61,14 @@ export const Menus: React.FC<MenusProps> = ({ onOpenBookingModal }) => {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`flex items-center gap-2 px-5 py-3.5 text-xs uppercase tracking-[0.18em] font-medium border-b-2 transition-all whitespace-nowrap cursor-pointer ${
+                className={`flex items-center justify-center md:justify-start gap-1.5 sm:gap-2 px-1.5 sm:px-4 md:px-5 py-2.5 md:py-3.5 text-[9.5px] min-[390px]:text-[10.5px] sm:text-xs uppercase tracking-[0.04em] min-[390px]:tracking-[0.06em] sm:tracking-[0.16em] font-medium border transition-all cursor-pointer text-center md:text-left ${
                   isActive
-                    ? 'border-[#C5A880] text-[#C5A880] bg-[#161513]'
-                    : 'border-transparent text-[#F3EFE6]/55 hover:text-[#F3EFE6] hover:bg-[#161513]/40'
+                    ? 'border-[#C5A880] text-[#C5A880] bg-[#161513] shadow-sm md:border-b-2 md:border-t-0 md:border-x-0'
+                    : 'border-[#C5A880]/20 text-[#F3EFE6]/65 hover:text-[#F3EFE6] hover:border-[#C5A880]/50 bg-[#161513]/40 md:border-transparent md:bg-transparent md:border-b-2 md:hover:bg-[#161513]/40'
                 }`}
               >
-                <Icon className={`w-3.5 h-3.5 ${isActive ? 'text-[#C5A880]' : 'opacity-60'}`} />
-                <span>{cat.label}</span>
+                <Icon className={`w-3.5 h-3.5 shrink-0 ${isActive ? 'text-[#C5A880]' : 'opacity-60'}`} />
+                <span className="leading-tight whitespace-nowrap">{cat.label}</span>
               </button>
             );
           })}

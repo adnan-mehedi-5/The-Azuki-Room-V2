@@ -70,7 +70,7 @@ export const LoungeSection: React.FC<LoungeSectionProps> = ({ onOpenEnquiry }) =
               </button>
 
               <a
-                href="/menus/event-set-menus.pdf"
+                href={`${import.meta.env.BASE_URL}menus/event-set-menus.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 py-3.5 border border-[#F3EFE6]/20 hover:border-[#B49A75] text-[#F3EFE6] text-xs uppercase tracking-[0.2em] font-medium transition-colors bg-[#1A1815]/40"
@@ -86,7 +86,7 @@ export const LoungeSection: React.FC<LoungeSectionProps> = ({ onOpenEnquiry }) =
             <div className="relative group overflow-hidden border border-[#F3EFE6]/10 shadow-2xl">
               <div className="aspect-[4/5] w-full overflow-hidden bg-[#161513]">
                 <img
-                  src="/images/interiors/terrace.webp"
+                  src={`${import.meta.env.BASE_URL}images/interiors/terrace.webp`}
                   alt="Atmospheric entrance and lounge terrace at The Azuki Room"
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -104,7 +104,7 @@ export const LoungeSection: React.FC<LoungeSectionProps> = ({ onOpenEnquiry }) =
             <div className="relative group overflow-hidden border border-[#F3EFE6]/10 shadow-2xl mt-8">
               <div className="aspect-[4/5] w-full overflow-hidden bg-[#161513]">
                 <img
-                  src="/images/kitchen/sushi-chef-portrait.webp"
+                  src={`${import.meta.env.BASE_URL}images/kitchen/sushi-chef-portrait.webp`}
                   alt="Master sushi chef preparing bespoke event service"
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

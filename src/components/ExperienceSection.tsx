@@ -50,7 +50,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
           <div className="lg:col-span-7 relative group overflow-hidden border border-[#F3EFE6]/10 shadow-2xl">
             <div className="aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden bg-[#1A1815]">
               <img
-                src="/images/interiors/dining-room-shoji-lights.webp"
+                src={`${import.meta.env.BASE_URL}images/interiors/dining-room-shoji-lights.webp`}
                 alt="Intimate dining room with warm shoji lights at The Azuki Room"
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -79,7 +79,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
             <div className="relative group overflow-hidden border border-[#F3EFE6]/10 hidden sm:block">
               <div className="aspect-[16/9] w-full overflow-hidden bg-[#1A1815]">
                 <img
-                  src="/images/interiors/dining-room-sconce.webp"
+                  src={`${import.meta.env.BASE_URL}images/interiors/dining-room-sconce.webp`}
                   alt="Atmospheric warm sconce lighting detail"
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

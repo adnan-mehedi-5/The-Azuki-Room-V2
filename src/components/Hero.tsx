@@ -40,14 +40,14 @@ export const Hero: React.FC<HeroProps> = ({
           muted
           loop
           playsInline
-          poster="/videos/azuki-hero-poster.jpg"
+          poster={`${import.meta.env.BASE_URL}videos/azuki-hero-poster.jpg`}
           className="w-full h-full object-cover scale-105 transition-transform duration-1000 ease-out"
           aria-hidden="true"
         >
           {/* Desktop & Tablet Source */}
-          <source src="/videos/azuki-hero.mp4" type="video/mp4" media="(min-width: 768px)" />
+          <source src={`${import.meta.env.BASE_URL}videos/azuki-hero.mp4`} type="video/mp4" media="(min-width: 768px)" />
           {/* Mobile Source */}
-          <source src="/videos/azuki-hero-mobile.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}videos/azuki-hero-mobile.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

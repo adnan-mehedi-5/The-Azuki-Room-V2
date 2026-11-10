@@ -44,12 +44,12 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             muted
             loop
             playsInline
-            poster="/videos/azuki-hero-poster.jpg"
+            poster={`${import.meta.env.BASE_URL}videos/azuki-hero-poster.jpg`}
             className="w-full h-full object-cover scale-105 transition-transform duration-1000 ease-out"
             aria-hidden="true"
           >
-            <source src="/videos/azuki-hero.mp4" type="video/mp4" media="(min-width: 768px)" />
-            <source src="/videos/azuki-hero-mobile.mp4" type="video/mp4" />
+            <source src={`${import.meta.env.BASE_URL}videos/azuki-hero.mp4`} type="video/mp4" media="(min-width: 768px)" />
+            <source src={`${import.meta.env.BASE_URL}videos/azuki-hero-mobile.mp4`} type="video/mp4" />
           </video>
 
           {/* Gradients & Luxury Dark Vignettes */}
@@ -63,21 +63,21 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: luxuryEase }}
-          className="relative z-10 max-w-5xl mx-auto px-6 py-32 md:py-40 text-center flex flex-col items-center"
+          className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-24 pb-14 sm:py-32 md:py-40 text-center flex flex-col items-center"
         >
           {/* Subtle Kanji Watermark Badge */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: luxuryEase }}
-            className="inline-flex items-center gap-2.5 px-4 py-1.5 border border-[#C5A880]/30 bg-[#161513]/80 rounded-full mb-8 backdrop-blur-sm shadow-xl"
+            className="inline-flex items-center gap-1.5 sm:gap-2.5 px-3 py-1 sm:px-4 sm:py-1.5 border border-[#C5A880]/30 bg-[#161513]/85 rounded-full mb-5 sm:mb-8 backdrop-blur-sm shadow-xl max-w-full"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880]" />
-            <span className="font-serif text-xs md:text-sm tracking-[0.25em] uppercase text-[#C5A880]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880] shrink-0" />
+            <span className="font-serif text-[10px] sm:text-xs md:text-sm tracking-[0.14em] sm:tracking-[0.25em] uppercase text-[#C5A880] whitespace-nowrap">
               炭火と伝統 · Hidden Izakaya
             </span>
-            <span className="text-[#F3EFE6]/30">|</span>
-            <span className="text-[11px] uppercase tracking-[0.2em] text-[#F3EFE6]/70">
+            <span className="text-[#F3EFE6]/30 text-[10px] sm:text-xs">|</span>
+            <span className="text-[9px] sm:text-[11px] uppercase tracking-[0.14em] sm:tracking-[0.2em] text-[#F3EFE6]/70 whitespace-nowrap">
               Chancery Lane
             </span>
           </motion.div>
@@ -87,7 +87,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.2, ease: luxuryEase }}
-            className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-[#F3EFE6] font-normal leading-[1.08] mb-6 max-w-4xl drop-shadow-2xl"
+            className="font-serif text-3xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight text-[#F3EFE6] font-normal leading-[1.12] sm:leading-[1.08] mb-4 sm:mb-6 max-w-4xl drop-shadow-2xl"
           >
             A Hidden World of <br className="hidden sm:inline" />
             <span className="italic font-light text-[#EAE5DA]">Japanese Dining</span>
@@ -98,7 +98,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.3, ease: luxuryEase }}
-            className="text-sm sm:text-base md:text-lg text-[#F3EFE6]/80 font-light max-w-2xl leading-relaxed mb-10 tracking-wide"
+            className="text-xs sm:text-base md:text-lg text-[#F3EFE6]/80 font-light max-w-xl sm:max-w-2xl leading-relaxed mb-6 sm:mb-10 tracking-wide px-2 sm:px-0"
           >
             Experience the soul of Japan through binchotan-grilled yakitori, expertly crafted sushi, and warm hospitality in our intimate Chancery Lane retreat.
           </motion.p>
@@ -108,18 +108,18 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.4, ease: luxuryEase }}
-            className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full sm:w-auto"
+            className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 w-full sm:w-auto px-4 sm:px-0"
           >
             <button
               onClick={onOpenBookingModal}
-              className="w-full sm:w-auto px-8 py-4 bg-[#C5A880] hover:bg-[#D8BF9B] text-[#0E0D0C] text-xs uppercase tracking-[0.22em] font-bold transition-all duration-300 border border-[#C5A880] shadow-2xl shadow-[#C5A880]/20 hover:-translate-y-0.5 cursor-pointer"
+              className="w-full sm:w-auto px-7 py-3.5 sm:px-8 sm:py-4 bg-[#C5A880] hover:bg-[#D8BF9B] text-[#0E0D0C] text-[11px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.22em] font-bold transition-all duration-300 border border-[#C5A880] shadow-2xl shadow-[#C5A880]/20 hover:-translate-y-0.5 cursor-pointer"
             >
               Book a Table
             </button>
 
             <button
               onClick={() => onNavigate('/menus')}
-              className="w-full sm:w-auto px-8 py-4 bg-transparent hover:bg-[#F3EFE6]/10 text-[#F3EFE6] text-xs uppercase tracking-[0.22em] font-medium transition-all duration-300 border border-[#C5A880]/30 hover:border-[#C5A880] cursor-pointer"
+              className="w-full sm:w-auto px-7 py-3.5 sm:px-8 sm:py-4 bg-transparent hover:bg-[#F3EFE6]/10 text-[#F3EFE6] text-[11px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.22em] font-medium transition-all duration-300 border border-[#C5A880]/30 hover:border-[#C5A880] cursor-pointer"
             >
               Explore Menus
             </button>
@@ -130,7 +130,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.5, ease: luxuryEase }}
-            className="mt-14 sm:mt-16 grid grid-cols-3 gap-4 sm:gap-10 border-t border-[#C5A880]/20 pt-6 max-w-2xl w-full text-center"
+            className="mt-8 sm:mt-16 grid grid-cols-3 gap-2 sm:gap-10 border-t border-[#C5A880]/20 pt-4 sm:pt-6 max-w-2xl w-full text-center"
           >
             <div className="flex flex-col items-center">
               <Flame className="w-4 h-4 text-[#C5A880] mb-1.5 opacity-90" />
@@ -188,7 +188,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             >
               <div className="aspect-[16/10] w-full overflow-hidden bg-[#161513]">
                 <img
-                  src="/images/interiors/dining-room-shoji-lights.webp"
+                  src={`${import.meta.env.BASE_URL}images/interiors/dining-room-shoji-lights.webp`}
                   alt="Intimate dining room with soft shoji lanterns at The Azuki Room"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
@@ -305,7 +305,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
                 {/* Visual Banner */}
                 <div className="relative aspect-[16/10] w-full overflow-hidden border border-[#C5A880]/15 mb-6 group">
                   <img
-                    src="/images/kitchen/chef-grilling-fish-smoke.webp"
+                    src={`${import.meta.env.BASE_URL}images/kitchen/chef-grilling-fish-smoke.webp`}
                     alt="Chef grilling whole fish over Kishu binchotan charcoal"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
@@ -332,7 +332,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
                   {/* Dish 1: Negima */}
                   <div className="p-3.5 sm:p-4 bg-[#1A1815] border border-[#C5A880]/15 flex items-center gap-4 hover:border-[#C5A880]/35 transition-colors">
                     <img
-                      src="/images/food/chicken-leek-yakitori.webp"
+                      src={`${import.meta.env.BASE_URL}images/food/chicken-leek-yakitori.webp`}
                       alt="Chicken & Tokyo Leek Negima"
                       className="w-16 h-16 sm:w-18 sm:h-18 object-cover border border-[#C5A880]/20 shrink-0"
                     />
@@ -352,7 +352,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
                   {/* Dish 2: Lamb Cutlets */}
                   <div className="p-3.5 sm:p-4 bg-[#1A1815] border border-[#C5A880]/15 flex items-center gap-4 hover:border-[#C5A880]/35 transition-colors">
                     <img
-                      src="/images/food/lamb-chops-close.webp"
+                      src={`${import.meta.env.BASE_URL}images/food/lamb-chops-close.webp`}
                       alt="Spiced Robata Lamb Cutlets"
                       className="w-16 h-16 sm:w-18 sm:h-18 object-cover border border-[#C5A880]/20 shrink-0"
                     />
@@ -384,7 +384,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
                 {/* Visual Banner */}
                 <div className="relative aspect-[16/10] w-full overflow-hidden border border-[#C5A880]/15 mb-6 group">
                   <img
-                    src="/images/kitchen/blowtorch-sushi.webp"
+                    src={`${import.meta.env.BASE_URL}images/kitchen/blowtorch-sushi.webp`}
                     alt="Sushi chef searing nigiri with delicate torch finish"
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
@@ -411,7 +411,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
                   {/* Dish 1: Dragon Roll */}
                   <div className="p-3.5 sm:p-4 bg-[#1A1815] border border-[#C5A880]/15 flex items-center gap-4 hover:border-[#C5A880]/35 transition-colors">
                     <img
-                      src="/images/food/dragon-roll.webp"
+                      src={`${import.meta.env.BASE_URL}images/food/dragon-roll.webp`}
                       alt="The Azuki Dragon Roll"
                       className="w-16 h-16 sm:w-18 sm:h-18 object-cover border border-[#C5A880]/20 shrink-0"
                     />
@@ -431,7 +431,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
                   {/* Dish 2: Wagyu Tataki */}
                   <div className="p-3.5 sm:p-4 bg-[#1A1815] border border-[#C5A880]/15 flex items-center gap-4 hover:border-[#C5A880]/35 transition-colors">
                     <img
-                      src="/images/food/beef-tataki.webp"
+                      src={`${import.meta.env.BASE_URL}images/food/beef-tataki.webp`}
                       alt="Seared Wagyu Tataki"
                       className="w-16 h-16 sm:w-18 sm:h-18 object-cover border border-[#C5A880]/20 shrink-0"
                     />
@@ -504,7 +504,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             >
               <div className="aspect-[4/3] w-full overflow-hidden bg-[#161513]">
                 <img
-                  src="/images/food/dragon-roll.webp"
+                  src={`${import.meta.env.BASE_URL}images/food/dragon-roll.webp`}
                   alt="Saturday Sushi Club Dragon Roll"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
@@ -567,7 +567,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
                   Book Saturday Club
                 </button>
                 <a
-                  href="/menus/saturday-sushi-club.pdf"
+                  href={`${import.meta.env.BASE_URL}menus/saturday-sushi-club.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs text-[#C5A880] hover:underline"
@@ -631,14 +631,14 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             >
               <div className="relative group overflow-hidden border border-[#C5A880]/20">
                 <img
-                  src="/images/interiors/terrace.webp"
+                  src={`${import.meta.env.BASE_URL}images/interiors/terrace.webp`}
                   alt="The Azuki Room exterior Rolls Passage entrance"
                   className="w-full h-full object-cover aspect-[4/5]"
                 />
               </div>
               <div className="relative group overflow-hidden border border-[#C5A880]/20 mt-6">
                 <img
-                  src="/images/kitchen/sushi-chef-portrait.webp"
+                  src={`${import.meta.env.BASE_URL}images/kitchen/sushi-chef-portrait.webp`}
                   alt="Master sushi chef at The Azuki Room"
                   className="w-full h-full object-cover aspect-[4/5]"
                 />

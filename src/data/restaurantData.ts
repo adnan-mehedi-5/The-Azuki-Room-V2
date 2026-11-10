@@ -24,42 +24,42 @@ export const MENU_DOCUMENTS: MenuDocument[] = [
     id: "main-menu",
     title: "A La Carte & Robata",
     subtitle: "Robatayaki, Yakitori, Raw Bar & Charcoal Specialties",
-    path: "/menus/the-azuki-room-menu.pdf",
+    path: `${import.meta.env.BASE_URL}menus/the-azuki-room-menu.pdf`,
     type: "pdf"
   },
   {
     id: "sushi-menu",
     title: "Sushi & Sashimi Bar",
     subtitle: "Moriawase, Speciality Rolls & Cut Rolls",
-    path: "/menus/sushi-menu.jpg",
+    path: `${import.meta.env.BASE_URL}menus/sushi-menu.jpg`,
     type: "jpg"
   },
   {
     id: "lunch-menu",
     title: "Lunchtime Ramen & Bento",
     subtitle: "Weekday Midday Service (12:00 – 15:00)",
-    path: "/menus/lunch-menu.jpg",
+    path: `${import.meta.env.BASE_URL}menus/lunch-menu.jpg`,
     type: "jpg"
   },
   {
     id: "sushi-club-menu",
     title: "Saturday Sushi Club",
     subtitle: "90-Minute Unlimited Dining Experience",
-    path: "/menus/saturday-sushi-club.pdf",
+    path: `${import.meta.env.BASE_URL}menus/saturday-sushi-club.pdf`,
     type: "pdf"
   },
   {
     id: "events-menu",
     title: "Private Dining & Set Menus",
     subtitle: "Curated Set Menus for Parties & Private Hire",
-    path: "/menus/event-set-menus.pdf",
+    path: `${import.meta.env.BASE_URL}menus/event-set-menus.pdf`,
     type: "pdf"
   },
   {
     id: "drinks-menu",
     title: "Botanicals & Artisanal Teas",
     subtitle: "Cold-Pressed Mocktails, Infusions & Rare Teas",
-    path: "/menus/drinks-menu.pdf",
+    path: `${import.meta.env.BASE_URL}menus/drinks-menu.pdf`,
     type: "pdf"
   }
 ];
@@ -74,7 +74,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Corn-fed chicken thigh skewer char-grilled over Kishu binchotan with aged sweet tare glaze.",
     price: "£8.50",
     tag: "Signature Robata",
-    image: "/images/food/chicken-leek-yakitori.webp",
+    image: `${import.meta.env.BASE_URL}images/food/chicken-leek-yakitori.webp`,
     dietary: ["Halal"]
   },
   {
@@ -85,7 +85,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Lightly torched premium beef with ponzu reduction, garlic crisps, and sliced fresh chives.",
     price: "£18.50",
     tag: "Chef's Cut",
-    image: "/images/food/beef-tataki.webp",
+    image: `${import.meta.env.BASE_URL}images/food/beef-tataki.webp`,
     dietary: ["Halal"]
   },
   {
@@ -95,7 +95,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "robata",
     description: "Tender lamb chops grilled over charcoal embers with sansho pepper and house fermented miso glaze.",
     price: "£16.00",
-    image: "/images/food/lamb-chops-close.webp",
+    image: `${import.meta.env.BASE_URL}images/food/lamb-chops-close.webp`,
     dietary: ["Halal"]
   },
   {
@@ -105,7 +105,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "robata",
     description: "Butterflied whole sea bass roasted over smoke with Okinawa sea salt and citrus grated daikon.",
     price: "£22.00",
-    image: "/images/food/grilled-fish-whole.webp",
+    image: `${import.meta.env.BASE_URL}images/food/grilled-fish-whole.webp`,
     dietary: ["Halal", "Gluten-Free"]
   },
   {
@@ -115,7 +115,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "robata",
     description: "Jumbo wild prawns brushed with smoked yuzu butter and shiso gremolata.",
     price: "£14.00",
-    image: "/images/food/tiger-prawn-plated.webp",
+    image: `${import.meta.env.BASE_URL}images/food/tiger-prawn-plated.webp`,
     dietary: ["Halal"]
   },
   {
@@ -126,7 +126,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Silky caramelized Japanese aubergine with rich sweet red miso and toasted white sesame.",
     price: "£9.50",
     tag: "Plant-Based",
-    image: "/images/food/miso-aubergine.webp",
+    image: `${import.meta.env.BASE_URL}images/food/miso-aubergine.webp`,
     dietary: ["Halal", "Vegetarian", "Vegan"]
   },
   {
@@ -136,7 +136,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "robata",
     description: "Flame-kissed whole squid rings with ginger glaze, fresh chili, and togarashi mayo.",
     price: "£13.50",
-    image: "/images/food/grilled-squid.webp",
+    image: `${import.meta.env.BASE_URL}images/food/grilled-squid.webp`,
     dietary: ["Halal"]
   },
 
@@ -149,7 +149,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Crispy wild tiger prawn tempura, cucumber, wrapped in buttery ripe avocado with kabayaki glaze.",
     price: "£16.50",
     tag: "Most Requested",
-    image: "/images/food/dragon-roll.webp",
+    image: `${import.meta.env.BASE_URL}images/food/dragon-roll.webp`,
     dietary: ["Halal"]
   },
   {
@@ -159,7 +159,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "sushi",
     description: "Six pieces of seasonal prime sashimi grade cuts: Akami, Scottish Salmon, Hamachi & Botan Ebi.",
     price: "£26.00",
-    image: "/images/food/nigiri-prawn-tuna.webp",
+    image: `${import.meta.env.BASE_URL}images/food/nigiri-prawn-tuna.webp`,
     dietary: ["Halal"]
   },
   {
@@ -170,7 +170,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Caramelized freshwater eel cooked over Japanese short-grain rice with tare reduction and sansho.",
     price: "£24.00",
     tag: "Signature Pot",
-    image: "/images/food/unagi-claypot.webp",
+    image: `${import.meta.env.BASE_URL}images/food/unagi-claypot.webp`,
     dietary: ["Halal"]
   },
   {
@@ -180,7 +180,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "sushi",
     description: "A complete curation of raw, tempura, and robata plates for intimate communal dining.",
     price: "£48.00",
-    image: "/images/food/sharing-table-overhead.webp",
+    image: `${import.meta.env.BASE_URL}images/food/sharing-table-overhead.webp`,
     dietary: ["Halal"]
   },
 
@@ -223,7 +223,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "90 minutes of unlimited hand-rolled sushi, nigiri, sashimi, and hot izakaya small plates.",
     price: "£49.00 / guest",
     tag: "Every Saturday",
-    image: "/images/food/dragon-roll.webp",
+    image: `${import.meta.env.BASE_URL}images/food/dragon-roll.webp`,
     dietary: ["Halal"]
   },
   {
@@ -234,7 +234,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "The full 90-minute unlimited sushi feast paired with 4 curated artisanal tea and mocktail botanical flights.",
     price: "£75.00 / guest",
     tag: "Signature Experience",
-    image: "/images/food/cocktail-window-light.webp",
+    image: `${import.meta.env.BASE_URL}images/food/cocktail-window-light.webp`,
     dietary: ["Halal"]
   },
 
@@ -246,7 +246,7 @@ export const MENU_ITEMS: MenuItem[] = [
     category: "drinks",
     description: "Distilled botanical blend of lychee, white peach puree, cold-steeped jasmine tea, and sparkling dry tonic.",
     price: "£8.50",
-    image: "/images/food/cocktail-window-light.webp",
+    image: `${import.meta.env.BASE_URL}images/food/cocktail-window-light.webp`,
     dietary: ["Halal", "Non-Alcoholic"]
   },
   {

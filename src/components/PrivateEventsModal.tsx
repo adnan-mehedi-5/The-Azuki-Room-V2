@@ -211,7 +211,7 @@ export const PrivateEventsModal: React.FC<PrivateEventsModalProps> = ({ isOpen, 
 
               <div className="flex items-center justify-between pt-2">
                 <a
-                  href="/menus/event-set-menus.pdf"
+                  href={`${import.meta.env.BASE_URL}menus/event-set-menus.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-xs text-[#B49A75] hover:underline"

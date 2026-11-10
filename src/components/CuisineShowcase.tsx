@@ -83,7 +83,7 @@ export const CuisineShowcase: React.FC<CuisineShowcaseProps> = ({
             {/* Oversized Photographic Hero (7 cols) */}
             <div className="lg:col-span-7 relative group overflow-hidden border border-[#F3EFE6]/10 bg-[#161513] min-h-[420px] lg:min-h-[500px]">
               <img
-                src="/images/kitchen/chef-grilling-fish-smoke.webp"
+                src={`${import.meta.env.BASE_URL}images/kitchen/chef-grilling-fish-smoke.webp`}
                 alt="Chef grilling fresh fish over smoking binchotan charcoal"
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -199,7 +199,7 @@ export const CuisineShowcase: React.FC<CuisineShowcaseProps> = ({
             {/* Oversized Sushi Photography Hero (7 cols) */}
             <div className="lg:col-span-7 relative group overflow-hidden border border-[#F3EFE6]/10 bg-[#161513] min-h-[420px] lg:min-h-[500px] order-1 lg:order-2">
               <img
-                src="/images/kitchen/blowtorch-sushi.webp"
+                src={`${import.meta.env.BASE_URL}images/kitchen/blowtorch-sushi.webp`}
                 alt="Sushi chef searing nigiri with delicate blowtorch technique"
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -226,7 +226,7 @@ export const CuisineShowcase: React.FC<CuisineShowcaseProps> = ({
             {/* Lunch Hero */}
             <div className="lg:col-span-7 relative group overflow-hidden border border-[#F3EFE6]/10 bg-[#161513] min-h-[420px]">
               <img
-                src="/images/food/sharing-table-overhead.webp"
+                src={`${import.meta.env.BASE_URL}images/food/sharing-table-overhead.webp`}
                 alt="Midday lunch and ramen spread at The Azuki Room"
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -281,7 +281,7 @@ export const CuisineShowcase: React.FC<CuisineShowcaseProps> = ({
                   </p>
                 </div>
                 <a
-                  href="/menus/lunch-menu.jpg"
+                  href={`${import.meta.env.BASE_URL}menus/lunch-menu.jpg`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 border border-[#B49A75] text-[#F3EFE6] text-xs uppercase tracking-[0.16em] font-medium shrink-0 flex items-center gap-1.5 hover:bg-[#B49A75]/10"

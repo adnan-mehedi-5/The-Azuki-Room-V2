@@ -28,7 +28,7 @@ export const SushiClubSection: React.FC<SushiClubSectionProps> = ({ onOpenBookin
             <div className="relative group overflow-hidden border border-[#F3EFE6]/10 shadow-2xl">
               <div className="aspect-[4/3] sm:aspect-[16/11] w-full overflow-hidden bg-[#161513]">
                 <img
-                  src="/images/food/dragon-roll.webp"
+                  src={`${import.meta.env.BASE_URL}images/food/dragon-roll.webp`}
                   alt="Signature Dragon Roll served during Saturday Sushi Club"
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -170,7 +170,7 @@ export const SushiClubSection: React.FC<SushiClubSectionProps> = ({ onOpenBookin
 
                 <div className="flex items-center gap-3">
                   <a
-                    href="/menus/saturday-sushi-club.pdf"
+                    href={`${import.meta.env.BASE_URL}menus/saturday-sushi-club.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 border border-[#F3EFE6]/20 hover:border-[#B49A75] text-[#F3EFE6] transition-colors"
