@@ -36,7 +36,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
       <section
         id="hero"
         aria-label="Welcome to The Azuki Room"
-        className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0E0D0C]"
+        className="relative min-h-screen flex flex-col justify-start sm:justify-center items-center overflow-hidden bg-[#0E0D0C]"
       >
         {/* Background Video */}
         <div className="absolute inset-0 z-0">
@@ -68,14 +68,14 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: luxuryEase }}
-          className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-24 pb-14 sm:py-32 md:py-40 text-center flex flex-col items-center"
+          className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pt-20 sm:py-32 md:py-40 pb-12 text-center flex flex-col items-center"
         >
           {/* Subtle Kanji Watermark Badge */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: luxuryEase }}
-            className="inline-flex items-center gap-1.5 sm:gap-2.5 px-3 py-1 sm:px-4 sm:py-1.5 border border-[#C5A880]/30 bg-[#161513]/85 rounded-full mb-5 sm:mb-8 backdrop-blur-sm shadow-xl max-w-full"
+            className="inline-flex items-center gap-1.5 sm:gap-2.5 px-3 py-1 sm:px-4 sm:py-1.5 border border-[#C5A880]/30 bg-[#161513]/85 rounded-full mb-3.5 sm:mb-8 backdrop-blur-sm shadow-xl max-w-full"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880] shrink-0" />
             <span className="font-serif text-[10px] sm:text-xs md:text-sm tracking-[0.14em] sm:tracking-[0.25em] uppercase text-[#C5A880] whitespace-nowrap">
@@ -92,7 +92,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.2, ease: luxuryEase }}
-            className="font-serif text-3xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight text-[#F3EFE6] font-normal leading-[1.12] sm:leading-[1.08] mb-4 sm:mb-6 max-w-4xl drop-shadow-2xl"
+            className="font-serif text-[2.35rem] min-[390px]:text-[2.75rem] sm:text-5xl md:text-7xl lg:text-8xl tracking-tight text-[#F3EFE6] font-normal leading-[1.08] mb-4 sm:mb-6 max-w-4xl drop-shadow-2xl"
           >
             A Hidden World of <br className="hidden sm:inline" />
             <span className="italic font-light text-[#EAE5DA]">Japanese Dining</span>
