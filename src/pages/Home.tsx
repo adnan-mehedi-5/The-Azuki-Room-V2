@@ -75,7 +75,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate, onOpenBookingModal }) =>
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: luxuryEase }}
-            className="inline-flex items-center gap-1.5 sm:gap-2.5 px-3 py-1 sm:px-4 sm:py-1.5 border border-[#C5A880]/30 bg-[#161513]/85 rounded-full mb-3.5 sm:mb-8 backdrop-blur-sm shadow-xl max-w-full"
+            className="inline-flex items-center gap-1.5 sm:gap-2.5 px-3 py-1 sm:px-4 sm:py-1.5 border border-[#C5A880]/30 bg-[#161513]/85 rounded-full mt-6 sm:mt-0 mb-3.5 sm:mb-8 backdrop-blur-sm shadow-xl max-w-full"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#C5A880] shrink-0" />
             <span className="font-serif text-[10px] sm:text-xs md:text-sm tracking-[0.14em] sm:tracking-[0.25em] uppercase text-[#C5A880] whitespace-nowrap">
